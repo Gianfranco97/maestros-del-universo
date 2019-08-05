@@ -1,0 +1,12 @@
+.articulo-tarjeta {
+    padding: 20px 0;
+}
+
+.articulo-tarjeta .btn {
+    background-color: var(--colorPurple);
+}
+
+.articulo-tarjeta .btn:hover {
+    background-color: var(--colorBlue);
+    color: #fff;
+}

@@ -1,0 +1,230 @@
+:root {
+    --gridDeckHeight: 20vh;
+    --gridGridVerticalLineBottom: -4vh;
+    --gridGridVerticalLineTop: -10vh;
+    --gridGridRotateX: 30deg;
+    --gridGridTop: -6vh;
+    --gridPlanePerspective: 116px;
+    --gridLineVerticalWidth: 12px;
+    --gridLineHorizontalHeight: 6px;
+}
+
+:root {
+    --footerMarginTop: 4vw;
+}
+
+.single-footer__sky {
+    position: relative;
+    padding-left: calc(var(--singleTitleLeftMargin) - 2.5vw);
+    height: 25vw;
+    margin-top: calc(-25vw + var(--footerMarginTop));
+    pointer-events: none;
+}
+
+.single-footer__sky:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: calc(75vw / -2);
+    left: 0;
+    height: calc(75vw / 2);
+    width: 100vw;
+    background: var(--colorBg);
+}
+
+.single-footer__sky:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    bottom: -150%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 75vw;
+    width: 100vw;
+    background: radial-gradient( rgba(255, 255, 255, 0.9), #ee9617 15%, #fe5858, transparent 60% );
+    opacity: 0.7;
+}
+
+.grid__horizon {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    margin-bottom: -8px;
+    z-index: 1;
+}
+
+.grid__horizon:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient( to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7) 80%, rgba(255, 255, 255, 0.2) );
+    box-shadow: 0 -8px 30px rgba(255, 0, 214, 0.7), 0 -4px 10px rgba(255, 255, 255, 0.8);
+}
+
+.grid__deck {
+    position: relative;
+    height: var(--gridDeckHeight);
+    overflow: hidden;
+}
+
+.grid__deck:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 200%;
+    width: 100%;
+    background: radial-gradient(transparent 50%, var(--colorBg) 70%);
+}
+
+.grid__grid-plane {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0px;
+    perspective: var(--gridPlanePerspective);
+}
+
+.grid__grid-plane:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient( to bottom, rgba(255, 0, 214, 0.7) 5%, rgba(255, 0, 214, 0.4) 25%, transparent );
+}
+
+.grid__grid {
+    position: absolute;
+    top: var(--gridGridTop);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateX(var(--gridGridRotateX));
+}
+
+.grid__grid--vertical .grid__grid__line:nth-child(1) {
+    left: 10%;
+}
+
+.grid__grid--vertical .grid__grid__line:nth-child(2) {
+    left: 20%;
+}
+
+.grid__grid--vertical .grid__grid__line:nth-child(3) {
+    left: 30%;
+}
+
+.grid__grid--vertical .grid__grid__line:nth-child(4) {
+    left: 40%;
+}
+
+.grid__grid--vertical .grid__grid__line:nth-child(5) {
+    left: 50%;
+}
+
+.grid__grid--vertical .grid__grid__line:nth-child(6) {
+    left: 60%;
+}
+
+.grid__grid--vertical .grid__grid__line:nth-child(7) {
+    left: 70%;
+}
+
+.grid__grid--vertical .grid__grid__line:nth-child(8) {
+    left: 80%;
+}
+
+.grid__grid--vertical .grid__grid__line:nth-child(9) {
+    left: 90%;
+}
+
+.grid__grid--vertical .grid__grid__line:nth-child(10) {
+    left: 100%;
+    margin-left: -1px;
+}
+
+.grid__grid--vertical .grid__grid__line {
+    top: var(--gridGridVerticalLineTop);
+    left: 0;
+    bottom: var(--gridGridVerticalLineBottom);
+    width: var(--gridLineVerticalWidth);
+    background: linear-gradient( to left, transparent, rgba(255, 0, 214, 0.2), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3), rgba(255, 0, 214, 0.2), transparent );
+}
+
+.grid__grid__line {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+}
+
+.grid__grid--horizontal .grid__grid__line:nth-child(1) {
+    top: 10%;
+    opacity: 0.2;
+}
+
+.grid__grid--horizontal .grid__grid__line:nth-child(2) {
+    top: 20%;
+    opacity: 0.3;
+}
+
+.grid__grid--horizontal .grid__grid__line:nth-child(3) {
+    top: 30%;
+    opacity: 0.4;
+}
+
+.grid__grid--horizontal .grid__grid__line:nth-child(4) {
+    top: 40%;
+    opacity: 0.5;
+}
+
+.grid__grid--horizontal .grid__grid__line:nth-child(5) {
+    top: 50%;
+    opacity: 0.6;
+}
+
+.grid__grid--horizontal .grid__grid__line:nth-child(6) {
+    top: 60%;
+    opacity: 0.7;
+}
+
+.grid__grid--horizontal .grid__grid__line:nth-child(7) {
+    top: 70%;
+    opacity: 0.8;
+}
+
+.grid__grid--horizontal .grid__grid__line:nth-child(8) {
+    top: 80%;
+    opacity: 0.9;
+}
+
+.grid__grid--horizontal .grid__grid__line:nth-child(9) {
+    top: 90%;
+    opacity: 0.95;
+}
+
+.grid__grid--horizontal .grid__grid__line:nth-child(10) {
+    top: 100%;
+    margin-top: -1px;
+    opacity: 1;
+}
+
+.grid__grid--horizontal .grid__grid__line {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--gridLineHorizontalHeight);
+    z-index: 2;
+    background: linear-gradient( to bottom, transparent, rgba(255, 0, 214, 0.2) 40%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 0, 214, 0.2), transparent );
+}
+
+.grid__grid__line {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+}

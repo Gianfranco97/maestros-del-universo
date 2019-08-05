@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import './titulo.css';
+@import './footer.css';
+@import './articulos.css';
+
+:root {
+    --colorBg: #040028;
+    --colorBgSubtle: #9896b6;
+    --colorBlue: rgb(90, 144, 225);
+    --colorFg: #fff;
+    --colorPink: rgb(255, 0, 214);
+    --colorPurple: rgb(200, 41, 224);
+    --colorTurquoise: rgb(0, 237, 189);
+    --colorWhite: #fff;
+    --spacingSmall: 8px;
+}
+
+body {
+    margin: 0;
+    background: var(--colorBg);
+    color: var(--colorFg);
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-secondary {
+    background-color: var(--colorPurple)
+}
+
+#musica-btn {
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 99;
+}

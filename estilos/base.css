@@ -3,6 +3,22 @@
 @import './titulo.css';
 @import './footer.css';
 @import './articulos.css';
+@import './menu-lateral.css';
+@import './mapa-imagen.css';
+
+@font-face {
+    font-family: "jost";
+    src: url("../fonts/Jost-400-Book.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "jost";
+    src: url("../fonts/Jost-700-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
 
 :root {
     --colorBg: #040028;
@@ -22,10 +38,24 @@ body {
     color: var(--colorFg);
     font-size: 18px;
     overflow-x: hidden;
+    font-family: "jost", sans-serif
 }
+
+a {
+    color: var(--colorPurple);
+}
+
+a:hover {
+    color: var(--colorPurple);
+}
+
 
 .btn {
     border-radius: 0;
+}
+
+.btn-primary {
+    background-color: var(--colorBlue)
 }
 
 .btn-secondary {

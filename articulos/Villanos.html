@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="../estilos/base.css">
+
+    <!-- Mi JS -->
+    <script src="../js/index.js"></script>
+
+    <title>Maestros del Universo</title>
+</head>
+
+<body>
+    <!-- Musica -->
+    <img src="../imagenes/mudo.png" alt="Musica" id="musica-btn" onclick="reproducirMusica()" />
+    <audio src="../fondo.mp3" loop id="musica"></audio>
+
+    <!-- Encabezado -->
+    <div id="titulo">
+        <img onclick="goToHome()" src="../imagenes/he-man.png" alt="He-Man" height="160px" class="logo">
+        <div onclick="goToHome()" class="text">
+            <h1 class="chrome">He-Man</h1>
+            <h3 class="dreams">Blog</h3>
+        </div>
+
+        <div class="titulo__bio titulo__bio--blue">
+            <a href="../about.html" class="btn btn-light">
+                <img src="../imagenes/flash.gif" alt="Flash" class="flash">
+
+
+                ¡Lee mi Bio!
+
+                <img src="../imagenes/flash.gif" alt="Flash" class="flash">
+            </a>
+        </div>
+    </div>
+
+    <!-- Lista de articulos -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 menu-lateral">
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">Mi Historia</a>
+                    </li>
+                    <li>
+                        <a href="../articulos/Los_amos_del_universo.css.html">Los amos del universo</a>
+                    </li>
+                    <li>
+                        <a href="../articulos/Villanos.html" class="--activo">> Villanos</a>
+                    </li>
+                    <li>
+                        <a href="../articulos/consejos_de_los_amos_del_universo.html">Consejos de los amos del universo</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="col-md-8">
+                <div class="text-center">
+                    <img src="../imagenes/villanos.gif" alt="He-Man" class="img-thumbnail articulo-imagen text-centre">
+                </div>
+
+                <div class="articulo-contenido">
+                    <h1 class="display-4">
+                        Villanos
+                    </h1>
+
+                    <h6>Julio 22 de 1989</h6>
+
+                    <div class="separador-titulo"></div>
+
+                    <h3>Skeletor</h3>
+                    <img src="../imagenes/skeletor.gif" alt="Skeletor" class="img-thumbnail">
+                    <p>
+                        Era un mago que perdió la piel de su rostro luchando contra el Rey Randor de Eternia, padre de
+                        Adam (He-Man), quedando solamente su cráneo descarnado convirtiéndose en una especie de poderoso
+                        lich, que busca la manera de hacerse del poder y los secretos del Castillo Grayskull.
+                    </p>
+
+
+                    <h3>Beast Man</h3>
+                    <img src="../imagenes/Beast Man.gif" alt="Beast Man" class="img-thumbnail">
+                    <p>
+                        Una vez fue un humano matón de la Tierra llamado Biff Beastman que poseía una granja en la que
+                        constantemente maltrataba a los animales. Fue reclutado como técnico jefe en la nave espacial
+                        pilotada por Marlena Glenn, que se estrelló en Eternia, pero terminó en el mundo natal de
+                        Skeletor, Infinita, donde fue mutado en Beast Man y reclutado por Skeletor.
+                    </p>
+
+                    <h3>Evil-Lyn</h3>
+                    <img src="../imagenes/evil lyn.gif" alt="Evil-Lyn" class="img-thumbnail">
+                    <p>
+                        La única mujer miembro de Evil Warriors, es una bruja malvada que ayuda a Skeletor como su
+                        segunda al mando con sus poderes de oscuridad. Ella es mucho más inteligente que los otros
+                        secuaces de Skeletor, y aunque admite que no es tan poderosa como Skeletor, confiesa fácilmente
+                        que espera apoderarse de los poderes de su maestro y dominarlo sobre Eternia algún día. Por lo
+                        tanto, ha trabajado completamente independiente de Skeletor en múltiples ocasiones. Su marca
+                        registrada es la varita mágica coronada con una bola de cristal, pero Evil-Lyn generalmente
+                        genera magia sin la ayuda de ningún instrumento.
+                    </p>
+
+
+                    <h3>Mer-Man</h3>
+                    <img src="../imagenes/mer man.gif" alt="Mer-Man" class="img-thumbnail" width="400">
+                    <p>
+                        El rey de una especie de criaturas humanoides anfibias que habitan al menos una parte de los
+                        océanos del planeta Eternia. A veces se dice que Mer-Man no es solo el gobernante de su propia
+                        raza, sino también el gobernante de todo lo que se encuentra debajo del mar. Aunque un rey por
+                        derecho propio Mer-Man es un esclavo de Skeletor, el Señor de la Destrucción y gobernante de
+                        Snake Mountain. El servicio de Mer-Man a Skeletor significa que está constantemente en
+                        desacuerdo con He-Man y los otros heroicos campeones de Eternia. Al enfrentarse a los Guerreros
+                        Heroicos, Mer-Man se asocia con mayor frecuencia con Beast Man.
+                    </p>
+
+                    <h3>Trap Jaw</h3>
+                    <img src="../imagenes/trap jaw.gif" alt="Evil-Lyn" class="img-thumbnail">
+                    <p>
+                            Miembro de Evil Warriors, es un cyborg con una mandíbula mecánica de dientes afilados con una mordida mortal y un brazo robótico en el que puede colocar una amplia gama de armas diferentes. También tiene un lazo en su casco, que puede usar para deslizar los cables.
+                    </p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Cierre de la pagina -->
+    <footer class="single-footer">
+        <div class="single-footer__sky"></div>
+        <div class="grid" aria-hidden="true">
+            <div class="grid__horizon"></div>
+            <div class="grid__deck">
+                <div class="grid__grid-plane">
+                    <div class="grid__grid">
+                        <div class="grid__grid--vertical">
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                        </div>
+                        <div class="grid__grid--horizontal">
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Formulario de contacto -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" onsubmit="enviarCorreo(event)">
+                        <fieldset>
+                            <legend class="text-center header">Habla Conmigo</legend>
+
+                            <div class="form-group">
+                                <label>
+                                    Asunto:
+                                </label>
+                                <input id="asunto" name="name" type="text" placeholder="Asunto por el que me escribes"
+                                    class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label>
+                                    Nombre:
+                                </label>
+                                <input id="nombre" name="name" type="text" placeholder="Tu nombre completo"
+                                    class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label>
+                                    Mensaje:
+                                </label>
+                                <textarea class="form-control" id="mensaje" name="message"
+                                    placeholder="Tu mensaje para mi" rows="7"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    reproducirMusica()
+</script>
+
+</html>

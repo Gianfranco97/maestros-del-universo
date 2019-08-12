@@ -10,3 +10,38 @@
     background-color: var(--colorBlue);
     color: #fff;
 }
+
+.articulo-imagen {
+    width: 740px;
+}
+
+.articulo-contenido {
+    padding-right: 2em;
+    padding-left: 1em;
+    padding-top: 1.5em;
+    line-height: 1.5em;
+    font-size: 24px;
+}
+
+.articulo-contenido .separador-titulo {
+    display: inline-block;
+    width: 130px;
+    padding-top: 15px;
+    margin-bottom: 25px;
+    border-bottom: 2px var(--colorPurple) solid;
+}
+
+.articulo-contenido h1 {
+    text-shadow: 2px 2px 0 var(--colorPink);
+}
+
+
+
+.articulo-contenido p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.articulo-contenido h3 {
+    text-shadow: 2px 2px 0 var(--colorPink);
+}

@@ -3,14 +3,25 @@
 }
 
 #titulo .text {
+  cursor: pointer;
   display: inline-block;
   min-width: 420px;
   vertical-align: middle;
 }
 
-#titulo img {
+#titulo .logo {
+  cursor: pointer;
   margin-right: -70px;
   width: 225px;
+}
+
+#titulo .btn {
+  background-color: #ffffff;
+}
+
+#titulo .flash {
+  width: 26px;
+  vertical-align: middle;
 }
 
 #titulo .titulo__bio {
@@ -22,6 +33,10 @@
   width: 100%;
   background: var(--colorPurple);
   transform: translateY(0.5em);
+}
+
+#titulo .titulo__bio--blue {
+  background: var(--colorBlue);
 }
 
 #titulo .titulo__bio a {

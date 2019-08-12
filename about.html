@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="../estilos/base.css">
+
+    <!-- Mi JS -->
+    <script src="../js/index.js"></script>
+
+    <title>Maestros del Universo</title>
+</head>
+
+<body>
+    <!-- Musica -->
+    <img src="../imagenes/mudo.png" alt="Musica" id="musica-btn" onclick="reproducirMusica()" />
+    <audio src="../fondo.mp3" loop id="musica"></audio>
+
+    <!-- Encabezado -->
+    <div id="titulo">
+        <img onclick="goToHome()" src="../imagenes/he-man.png" alt="He-Man" height="160px" class="logo">
+        <div onclick="goToHome()" class="text">
+            <h1 class="chrome">He-Man</h1>
+            <h3 class="dreams">Blog</h3>
+        </div>
+
+        <div class="titulo__bio titulo__bio--blue">
+            <a href="../about.html" class="btn btn-light">
+                <img src="../imagenes/flash.gif" alt="Flash" class="flash">
+
+
+                ¡Lee mi Bio!
+
+                <img src="../imagenes/flash.gif" alt="Flash" class="flash">
+            </a>
+        </div>
+    </div>
+
+    <!-- Lista de articulos -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 menu-lateral">
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../index.html" class="--activo">> Mi Historia</a>
+                    </li>
+                    <li>
+                        <a href="../articulos/Los_amos_del_universo.css.html">Los amos del universo</a>
+                    </li>
+                    <li>
+                        <a href="../articulos/Villanos.html">Villanos</a>
+                    </li>
+                    <li>
+                        <a href="../articulos/consejos_de_los_amos_del_universo.html">Consejos de los amos del universo</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="col-md-8">
+                <div class="text-center">
+                    <img src="https://vignette.wikia.nocookie.net/heman/images/3/3b/He-man_Pict.JPG/revision/latest?cb=20120620005911&path-prefix=es"
+                        alt="He-Man" class="img-thumbnail articulo-imagen text-centre">
+                </div>
+
+                <div class="articulo-contenido">
+                    <h1 class="display-4">
+                        Mi Historia
+                    </h1>
+
+                    <h6>Mayo 30 de 1989</h6>
+
+                    <div class="separador-titulo"></div>
+
+
+                    <p>
+                        Yo soy He-Man principe de Eternia y defensor del castillo de los secretos de Grayskull
+                    </p>
+
+                    <img src="../imagenes/grayskull.gif" alt="Grayskull" class="img-thumbnail articulo-imagen">
+
+                    <p>
+                        Él es Cringer mi más querido amigo
+                    </p>
+
+                    <img src="../imagenes/cringer.gif" alt="Cringer" class="img-thumbnail articulo-imagen">
+
+                    <p>
+                        Fabulosos y secretos poderes me fueron otorgados el día en que levanté en alto mi espada mágica
+                        y grité: ¡Por el poder de Grayskull. Yo soy He-Man!”
+                    </p>
+
+                    <img src="../imagenes/poder.gif" alt="Poder" class="img-thumbnail articulo-imagen">
+
+
+                    <p>
+                        Cringer se convierte en un felino superpoderoso, y yo me transformo en He-Man, el hombre más
+                        poderoso del universo
+                    </p>
+
+                    <p>
+                        Sólo tres seres comparten este secreto: La reina Sorceress, Man-At-Arms y Orco
+                    </p>
+
+                    <p>
+                        Juntos defenderemos el castillo Grayskull de las demoniacas fuerzas de Skeletor
+                    </p>
+
+                    <img src="../imagenes/jajaja.gif" alt="JAJAJAJA" class="img-thumbnail articulo-imagen">
+
+                    <!-- Mapa de imagen -->
+                    <div class="mapa-imagen">
+                        <h1>Imagen con truco</h1>
+                        <h5>Busca en mi cuerpo y encuentra las zonas ocultas dende yace la fuente de mis increíbles poderes</h5>
+                        <div class="separador-titulo"></div>
+                        <br>
+
+                        <img src="./imagenes/easter-egg.png" usemap="#image-map" alt="easter-egg" class="img-thumbnail">
+
+                        <map name="image-map">
+                            <area target="_blank" alt="Fabulous Secret Powers - Live Action"
+                                title="Fabulous Secret Powers - Live Action"
+                                href="https://www.youtube.com/watch?v=9_1TDrwaMOc" coords="185,147,139,114"
+                                shape="rect">
+                            <area target="_blank" alt="Fabulous Secret Powers - Live Action"
+                                title="Fabulous Secret Powers - Live Action"
+                                href="https://www.youtube.com/watch?v=9_1TDrwaMOc" coords="241,129,274,171"
+                                shape="rect">
+                            <area target="_blank" alt="Fabulous Secret Powers" title="Fabulous Secret Powers"
+                                href="https://www.youtube.com/watch?v=ZZ5LpwO-An4"
+                                coords="197,270,219,273,228,288,227,306,219,318,205,336,193,322,188,302,189,286"
+                                shape="poly">
+                        </map>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Cierre de la pagina -->
+    <footer class="single-footer">
+        <div class="single-footer__sky"></div>
+        <div class="grid" aria-hidden="true">
+            <div class="grid__horizon"></div>
+            <div class="grid__deck">
+                <div class="grid__grid-plane">
+                    <div class="grid__grid">
+                        <div class="grid__grid--vertical">
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                        </div>
+                        <div class="grid__grid--horizontal">
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                            <div class="grid__grid__line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Formulario de contacto -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" onsubmit="enviarCorreo(event)">
+                        <fieldset>
+                            <legend class="text-center header">Habla Conmigo</legend>
+
+                            <div class="form-group">
+                                <label>
+                                    Asunto:
+                                </label>
+                                <input id="asunto" name="name" type="text" placeholder="Asunto por el que me escribes"
+                                    class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label>
+                                    Nombre:
+                                </label>
+                                <input id="nombre" name="name" type="text" placeholder="Tu nombre completo"
+                                    class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label>
+                                    Mensaje:
+                                </label>
+                                <textarea class="form-control" id="mensaje" name="message"
+                                    placeholder="Tu mensaje para mi" rows="7"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    reproducirMusica()
+</script>
+
+</html>

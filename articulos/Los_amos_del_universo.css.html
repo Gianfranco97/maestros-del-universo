@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <!-- Mis estilos -->
+  <link rel="stylesheet" href="../estilos/base.css">
+
+  <!-- Mi JS -->
+  <script src="../js/index.js"></script>
+
+  <title>Maestros del Universo</title>
+</head>
+
+<body>
+  <!-- Musica -->
+  <img src="../imagenes/mudo.png" alt="Musica" id="musica-btn" onclick="reproducirMusica()" />
+  <audio src="../fondo.mp3" loop id="musica"></audio>
+
+  <!-- Encabezado -->
+  <div id="titulo">
+    <img onclick="goToHome()" src="../imagenes/he-man.png" alt="He-Man" height="160px" class="logo">
+    <div onclick="goToHome()" class="text">
+      <h1 class="chrome">He-Man</h1>
+      <h3 class="dreams">Blog</h3>
+    </div>
+
+    <div class="titulo__bio titulo__bio--blue">
+      <a href="../about.html" class="btn btn-light">
+        <img src="../imagenes/flash.gif" alt="Flash" class="flash">
+
+
+        ¡Lee mi Bio!
+
+        <img src="../imagenes/flash.gif" alt="Flash" class="flash">
+      </a>
+    </div>
+  </div>
+
+  <!-- Lista de articulos -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 menu-lateral">
+        <ul>
+          <li>
+            <a href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="../about.html">Mi Historia</a>
+          </li>
+          <li>
+            <a href="../articulos/Los_amos_del_universo.css.html" class="--activo">> Los amos del universo</a>
+          </li>
+          <li>
+            <a href="../articulos/Villanos.html">Villanos</a>
+          </li>
+          <li>
+            <a href="../articulos/consejos_de_los_amos_del_universo.html">Consejos de los amos del universo</a>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+      <div class="col-md-8">
+        <div class="text-center">
+          <img src="../imagenes/titulo.gif" alt="He-Man" class="img-thumbnail articulo-imagen text-centre">
+        </div>
+
+        <div class="articulo-contenido">
+          <h1 class="display-4">
+            Los amos del universo
+          </h1>
+
+          <h6>Junio 10 de 1989</h6>
+
+          <div class="separador-titulo"></div>
+
+          <h3>Man-At-Arms</h3>
+          <img src="../imagenes/Duncan.gif" alt="Man-At-Arms" class="img-thumbnail">
+          <p>
+            Duncan, hombre leal y de total confianza de la familia real de Eternia, posee el antiguo conocimiento de la
+            forja y de la creación de máquinas, como sus antecesores en el puesto, Man-At-Arms es de vital importancia
+            para mantener la paz en Eternia, y para luchar si es necesario. Esta misión se ha encomendado a través de
+            generaciones a una única familia. Es el padre adoptivo de Teela, a quien recogió siendo un bebé a petición
+            de la hechicera, Sorceress, su verdadera madre. Man-At-Arms nunca rehúye el combate y siempre está dispuesto
+            a ayudar a He-Man para defender Eternia del mal.
+          </p>
+
+          <h3>Battle Cat / Cringer</h3>
+          <img src="../imagenes/cringer.gif" alt="Battle Cat / Cringer" class="img-thumbnail">
+          <p>
+            Miembro de la Tribu Tigre Verde, Cringer fue salvado del ataque de un parekk-narr por el joven príncipe Adam
+            y después de ello se convirtió en su devoto compañero de por vida. Ayudó a Adam en su búsqueda por unir las
+            dos mitades de la poderosa espada de HE para luego aumentar su poder y convertirlo en Battle Cat, el Tigre
+            Guerrero de He-man. Cringer es uno de los pocos aliados que sabe el secreto de Adam y lucha junto a los Amos
+            del Universo, llevando a He-Man a la batalla contra las fuerzas del mal.
+          </p>
+
+
+          <h3>Orko</h3>
+          <img src="../imagenes/Orco.gif" alt="Orko" class="img-thumbnail" width="460">
+          <p>
+            Después de la llegada del Imperio de la Horda, el mal de nuevo ha superado a las fuerzas del bien en las
+            cinco dimensiones. Así que en cada generación un guerrero cósmico fue reclutado por los señores de Trolla
+            para luchar contra el mal. A cada uno fue dada la espada de He, un arma infundida con el poder del Universo.
+            Se les asignó también un guía Trollano para vigilar y asesorar en sus misiones. En el planeta de Eternia,
+            después de cinco siglos de ser partido en dos, el Poder Trollano y la Espada por fin se unieron y dejaron a
+            un digno heredero de su poder - el príncipe Adam de la casa real. Orko, un miembro de la élite mágica
+            Trollana, fue asignado a vigilar a Adam. Aunque era un mago de gran alcance en Trolla, las propiedades
+            ocultas místicas de Eternia dejó la magia en poco más que trucos de entretenimiento, que utiliza para
+            entretener a sus amigos y permanecer encubierto. Mago y bufón de la corte, Orko es otro de los grandes
+            amigos de Adam. A pesar de que su magia no es tan poderosa como la de otros hechiceros de Eternia, siempre
+            está junto a Adam / He-Man en su lucha contra las fuerzas del mal. Cabe destacar que en su planeta natal,
+            era uno de los magos más poderosos, aunque en Eternia sea sólo un bufón.
+          </p>
+
+
+          <h3>Sorceress</h3>
+          <img src="../imagenes/sorceress.gif" alt="Sorceress" class="img-thumbnail">
+          <p>
+            Es la madre verdadera de Teela, es la reina y guardiana del Castillo Grayskull, fortaleza misteriosa donde
+            los antiguos sabios de Eternia depositaron todo su conocimiento y poder, y de donde emana la fuerza de
+            He-Man. Su nombre real es Teelina, tiene la capacidad de transformarse en un enorme halcón naranja llamado
+            Zoar, y se comunicarse con He-Man u otros seres de forma telepática. En un episodio de la serie se vio a
+            Sorceress cuando era joven, era una muchacha humilde y originaria de una aldea. Un perverso y maléfico
+            hechicero la perseguía para destruirla, en un momento que ya no pudo más para escapar y esconderse, cayó
+            cansada al suelo en un desierto. En ese desierto como arte de magia apareció el Castillo Grayskull, una voz
+            la llamó para que entrara y ella entró. Allí conoció a la reina y guardiana anterior del Castillo. Le reveló
+            los secretos del castillo y le enseñó las ciencias ocultas de la magia para que ella también obtuviera esos
+            poderes y convertirse en halcón. La antigua guardiana la eligió y la proclamó reina bajo su nombre verdadero
+            de Sorceress.
+          </p>
+
+          <h3>Teela</h3>
+          <img src="../imagenes/teela.gif" alt="Teela" class="img-thumbnail">
+          <p>
+            Hija adoptiva de Man-At-Arms, quien la salvó de ser raptada cuando era niña por los secuaces de Skeletor. Su
+            padre verdadero murió en una batalla y su madre es Sorceress, quien en un capítulo le confesó la verdad y
+            luego hizo que ella lo borrara de su mente. Es bella, inteligente y valerosa. Capitana de la Guardia Real,
+            es capaz de pelear como cualquier hombre, sin perder un ápice de elegancia. Se crió junto a Adam, pero
+            mientras ella estudiaba seriamente y aprendía fervorosamente las artes de batalla, el segundo se tomaba todo
+            a broma y con poco interés, lo que no quiere decir que no aprendiera, pero Teela siempre le ha visto como un
+            chico inmaduro para ejercer de Rey algún día. Teela parece sentir algo más que amistad por He-Man, aunque
+            nunca lo haya demostrado abiertamente.
+          </p>
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Cierre de la pagina -->
+  <footer class="single-footer">
+    <div class="single-footer__sky"></div>
+    <div class="grid" aria-hidden="true">
+      <div class="grid__horizon"></div>
+      <div class="grid__deck">
+        <div class="grid__grid-plane">
+          <div class="grid__grid">
+            <div class="grid__grid--vertical">
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+            </div>
+            <div class="grid__grid--horizontal">
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+              <div class="grid__grid__line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Formulario de contacto -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well well-sm">
+          <form class="form-horizontal" onsubmit="enviarCorreo(event)">
+            <fieldset>
+              <legend class="text-center header">Habla Conmigo</legend>
+
+              <div class="form-group">
+                <label>
+                  Asunto:
+                </label>
+                <input id="asunto" name="name" type="text" placeholder="Asunto por el que me escribes"
+                  class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label>
+                  Nombre:
+                </label>
+                <input id="nombre" name="name" type="text" placeholder="Tu nombre completo" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label>
+                  Mensaje:
+                </label>
+                <textarea class="form-control" id="mensaje" name="message" placeholder="Tu mensaje para mi"
+                  rows="7"></textarea>
+              </div>
+
+              <div class="form-group">
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+<script>
+  reproducirMusica()
+</script>
+
+</html>

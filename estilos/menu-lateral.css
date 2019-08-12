@@ -1,0 +1,30 @@
+.menu-lateral {
+    /* background: blue; */
+}
+
+.menu-lateral::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: 0;
+    height: calc(100% + var(--footerMarginTop) + 12px);
+    width: 60px;
+    background: var(--colorPurple);
+}
+
+.menu-lateral ul {
+    list-style: none;
+    font-size: 1.6em;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.menu-lateral ul li {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px var(--colorPurple) solid; 
+    padding-right: 60px;
+}
+
+.menu-lateral ul li .--activo {
+    color: var(--colorBgSubtle);
+}

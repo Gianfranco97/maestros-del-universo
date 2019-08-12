@@ -1,9 +1,9 @@
 var reproduciendo = false
 
-function reproducirMusica() {
+function reproducirMusica(isHome) {
   const musica = document.getElementById('musica')
   const musica_btn = document.getElementById('musica-btn')
-  const urlBase = '../imagenes'
+  const urlBase = isHome ? './imagenes' : '../imagenes'
 
   if (!reproduciendo) {
     musica.play()
